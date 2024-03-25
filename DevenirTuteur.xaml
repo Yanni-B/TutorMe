@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetDevEntreprise.DevenirTuteur">
+
+
+    <ScrollView>
+		<VerticalStackLayout
+			Padding="30,0"
+            Spacing="25">
+			<Label
+                Text="Inscription pour devenir tuteur"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+			
+			<Entry x:Name="newPerson"
+                Placeholder="Enter name" />
+
+			<Entry x:Name="Note"
+                Placeholder="Veuillez indiquer votre relevé de note" />
+
+			<Label
+                Text="Veuillez indiquer vos trois disponibilités (le plus préférable au moins préférable)"
+                SemanticProperties.HeadingLevel="Level1" />
+
+			<Entry x:Name="Horaire1"
+                Placeholder="Premier horaire" />
+
+			<Entry x:Name="Horaire2"
+                Placeholder="Deuxième horaire" />
+
+			<Entry x:Name="Horaire3"
+                Placeholder="Troisième horaire" />
+
+			<Button
+                Text="Envoyez votre candidature" />
+			
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
