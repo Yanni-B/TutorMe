@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetDevEntreprise.AvoirTuteur">
+
+
+    <ScrollView>
+        <VerticalStackLayout
+			Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="Inscription pour avoir un tuteur"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+			<Entry x:Name="nouveauNom"
+                Placeholder="Entrez votre nom" />
+
+            <Entry x:Name="nouveauPrenom"
+                Placeholder="Entrez votre prénom" />
+
+            <Entry x:Name="nouveauDA"
+                Placeholder="Entrez votre DA" />
+
+            <Label
+                Text="Veuillez indiquer vos trois disponibilités (le plus préférable au moins préférable). [Écrivez la date sous ce format : Jour + heure début + heure fin.]"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry x:Name="HoraireEleve1"
+                Placeholder="Premier horaire" />
+
+            <Entry x:Name="HorairEleve2"
+                Placeholder="Deuxième horaire" />
+
+            <Entry x:Name="HoraireEleve3"
+                Placeholder="Troisième horaire" />
+
+			<!-- Manque les checkbox à cet endroit -->
+
+            <Entry x:Name="texte"
+                Placeholder="Écrivez un petit texte pour vérifier votre texte en français" />
+
+            <Button
+                Text="Envoyez votre candidature" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
