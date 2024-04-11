@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutorMe.DevenirTuteur">
+
+	<ScrollView>
+		<VerticalStackLayout
+            Padding="30"
+            Spacing="25">
+
+			<Entry x:Name="newPerson"
+                Placeholder="Entrez votre nom" />
+
+			<Entry x:Name="Note"
+                Placeholder="Veuillez indiquer votre relevé de note" />
+
+
+			<Label
+                Text="Veuillez indiquer vos trois disponibilités (le plus préférable au moins préférable)"
+                SemanticProperties.HeadingLevel="Level1" />
+
+			<Entry x:Name="Horaire1"
+                Placeholder="Premier horaire" />
+
+			<Entry x:Name="Horaire2"
+                Placeholder="Deuxième horaire" />
+
+            <Entry x:Name="Horaire3"
+                Placeholder="Troisième horaire" />
+
+            <Button Text="Envoyer votre candidature"
+                Grid.Row="1"
+                Clicked="saveButton_Clicked" />
+
+            <Label x:Name="statusMessage"
+                TextColor="{StaticResource Primary}"
+                Grid.Row="2" />
+
+
+
+			<CollectionView x:Name="peopleList" Grid.Row="4">
+				<CollectionView.ItemTemplate>
+					<DataTemplate>
+						<Grid ColumnDefinitions="*,2*">
+							<Label Text="{Binding Id}" TextColor="{StaticResource Primary}"/>
+                            <Label Grid.Column="1" Text="{Binding Name}" TextColor="{StaticResource Primary}" />
+                            <Label Grid.Column="1" Text="{Binding Prenom}" TextColor="{StaticResource Primary}"/>
+						</Grid>
+					</DataTemplate>
+				</CollectionView.ItemTemplate>
+			</CollectionView>
+
+		</VerticalStackLayout>
+	</ScrollView>
+
+</ContentPage>

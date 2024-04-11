@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutorMe.PageAccueil">
+
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="TUTORME"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Bienvenue dans notre application de tutorat."
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"/>
+
+
+            <Button
+                Text="Avoir un tuteur."
+                Clicked="BoutonChangerTuteur"
+                Style="{StaticResource SubHeadline}"/>
+
+            <Button
+                Text="Devenir un tuteur."
+                Clicked="BoutonDevenirTuteur"
+                Style="{StaticResource SubHeadline}"/>
+
+
+            <Button
+                Text="Évaluation après chaque rencontre"
+                Style="{StaticResource SubHeadline}"
+                Clicked="BoutonCandid"/>
+
+            <Button
+                Text="Évaluation après session (pour tuteur)"
+                Style="{StaticResource SubHeadline}"
+                Clicked="BoutonChercherTuteur"/>
+
+            <Button
+                Text="Ressources"
+                Style="{StaticResource SubHeadline}"
+                Clicked="BoutonRessource"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
+
+<!-- Source qui nous a aid� � naviguer entre les pages. -->
+<!-- Source : https://learn.microsoft.com/fr-fr/dotnet/maui/user-interface/pages/navigationpage?view=net-maui-8.0 -->
+<!-- Source2 : https://www.youtube.com/watch?v=G1ZQqzaILyY -->
+
