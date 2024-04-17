@@ -1,19 +1,71 @@
-DROP DATABASE IF EXISTS Tutorat;
-CREATE DATABASE IF NOT EXISTS Tutorat;
-USE Tutorat;
+DROP DATABASE IF EXISTS tutorat;
+CREATE DATABASE IF NOT EXISTS tutorat;
+USE tutorat;
 
-CREATE TABLE IF NOT EXISTS USER(
-	USER_ID INT(11) AUTO_INCREMENT PRIMARY KEY,
-	DEA INT(7),
-	FIRST_NAME VARCHAR(255),
-	LAST_NAME VARCHAR(255),
-	EMAIL VARCHAR(50),
-	ROLE VARCHAR(20),
-	HORAIRE TEXT,
-	UNIQUE(EMAIL),
-	UNIQUE(DEA)
+
+CREATE TABLE IF NOT EXISTS tutorat.user(
+	UserId	INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	Username VARCHAR(20) NOT NULL,
+	Email VARCHAR(50) NOT NULL,
+	Role VARCHAR(20) # admin, ...
 );
 
+CREATE TABLE IF NOT EXISTS tutorat.password(
+	PasswordId  INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	Passwd 	VARCHAR(255) NOT NULL,
+	FOREIGN KEY(PasswordId) REFERENCES user(UserId)
+);
+
+CREATE TABLE IF NOT EXISTS Tutorat.horaire(
+	HoraireId  INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	Lundi VARCHAR(11),		# format : '10:00-13:00'
+	Mardi VARCHAR(11),		# format : '15:00-16:00'
+	Mercredi VARCHAR(11),		# format : '11:30-13:30'
+	Jeudi VARCHAR(11),		# format : '17:00-18:00'
+	Vendredi VARCHAR(11)		# format : '15:00-16:00'
+);
+
+CREATE TABLE IF NOT EXISTS tutorat.eleve(
+	DEA INT NOT NULL PRIMARY KEY,
+	Nom  varchar(20) NOT NULL,
+	Prenom varchar(20) NOT NULL,
+	Programme  VARCHAR(30),
+	CoursFrancais 	INT, # 1234
+	Antidote  BOOL DEFAULT FALSE, 
+	InfosPertinentes  VARCHAR(200), # problèmes dapprentissage, maladies ...
+	ResultatTexte INT, # resultats 
+	HoraireId  INT,
+	FOREIGN KEY(HoraireId) REFERENCES horaire(HoraireId),
+	UserId 	INT,
+	FOREIGN KEY(UserId) REFERENCES user(UserId)
+);
+
+CREATE TABLE IF NOT EXISTS tutorat.tuteur(
+	TuteurId  INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	Nom  varchar(20) NOT NULL,
+	Prenom varchar(20) NOT NULL,
+	Anciennete DATE,
+	TypeTuteur varchar(20), #débutant, moyen, méga, enseignant
+	HoraireId  INT,
+	FOREIGN KEY(HoraireId) REFERENCES horaire(HoraireId),
+	UserId 	INT,
+	FOREIGN KEY(UserId) REFERENCES user(UserId)
+);
+
+CREATE TABLE IF NOT EXISTS tutorat.sessionTutorat(
+	SessionTutoratId  INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	DateSession DATE,
+	HeureDebut  VARCHAR(10), # format : 12:00
+	eleveDEA INT NOT NULL,
+	FOREIGN KEY(eleveDEA) REFERENCES eleve(DEA),
+	TuteurId INT NOT NULL,
+	FOREIGN KEY(TuteurId) REFERENCES tuteur(TuteurId),
+	NoteRencontreEleve INT, # note/20
+	NoteRencontreTuteur INT, # note/20
+	InfosRencontre	VARCHAR(200)
+);
+
+'
 CREATE TABLE IF NOT EXISTS COURS(
 	COURS_ID INT(11) AUTO_INCREMENT PRIMARY KEY,
 	TUTEUR_ID INT(11),
@@ -45,4 +97,4 @@ CREATE TABLE IF NOT EXISTS HIDDEN (
 	USER_ID INT(11),
 	hiddenPass VARCHAR(30),
 	FOREIGN KEY (USER_ID) REFERENCES USER(USER_ID)
-);
+);'
