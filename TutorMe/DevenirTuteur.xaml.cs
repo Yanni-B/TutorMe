@@ -22,10 +22,11 @@ namespace TutorMe
                 {
                     Name = newPerson.Text,
                     Note = Note.Text,
-                    Horaire1 = Horaire1.Text,
-                    Horaire2 = Horaire2.Text,
-                    Horaire3 = Horaire3.Text
-                });
+                    heureDebut = (int) pickerLundi.SelectedItem,          
+                    //Horaire1 = Horaire1.Text,
+                    //Horaire2 = Horaire2.Text,
+                    //Horaire3 = Horaire3.Text
+                }) ;
 
                 await DisplayAlert("Succès", "Votre candidature a bien été envoyé", "OK");
 
