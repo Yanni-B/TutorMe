@@ -1,0 +1,52 @@
+﻿
+using TutorMe.Models;
+
+namespace TutorMe
+{
+    public partial class AvoirTuteur : ContentPage
+    {
+
+        private readonly Database database;
+        private int editClientId;
+        public AvoirTuteur(Database dbService)
+        {
+            InitializeComponent();
+            database = dbService;
+        }
+
+        private async void saveButton_Clicked(object sender, EventArgs e)
+        {
+            if (editClientId == 0)
+            {
+                await database.Create(new Person
+                {
+                    Name = newPerson.Text,
+                    Prenom = Prenom.Text,
+                    DA = DA.Text,
+                    Horaire1 = Horaire1.Text,
+                    Horaire2 = Horaire2.Text,
+                    Horaire3 = Horaire3.Text
+                });
+                await DisplayAlert("Succès", "Votre candidature a bien été envoyé", "OK");
+
+                await Navigation.PopAsync();
+            }
+
+
+        }
+        
+
+
+    }
+
+
+
+}
+
+
+
+/*
+   SOURCE :
+   https://learn.microsoft.com/fr-fr/training/modules/store-local-data/4-exercise-store-data-locally-with-sqlite
+   https://youtu.be/VziMUc-VQko?si=FeJ1QJWf-yCqF44P
+*/

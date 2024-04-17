@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutorMe.Ressource">
+
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="Voici quelques ressources pour vous aider"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
+
+<!-- Source qui nous a aid� � naviguer entre les pages. -->
+<!-- Source : https://learn.microsoft.com/fr-fr/dotnet/maui/user-interface/pages/navigationpage?view=net-maui-8.0 -->
+<!-- Source2 : https://www.youtube.com/watch?v=G1ZQqzaILyY -->
+
