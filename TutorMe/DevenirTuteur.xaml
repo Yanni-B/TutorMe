@@ -19,7 +19,22 @@
                 Text="Veuillez indiquer vos trois disponibilités (le plus préférable au moins préférable)"
                 SemanticProperties.HeadingLevel="Level1" />
 
-            <Picker x:Name="pickerLundi"
+
+                <Picker x:Name="pickerLundi"
+            Title="Choissisez l'heure de départ">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:Int32}">
+                        <x:Int32>11</x:Int32>
+                        <x:Int32>12</x:Int32>
+                        <x:Int32>13</x:Int32>
+                        <x:Int32>14</x:Int32>
+                        <x:Int32>15</x:Int32>
+                        <x:Int32>16</x:Int32>
+                        <x:Int32>17</x:Int32>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker x:Name="pickerMardi"
             Title="Choissisez l'heure de départ">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:Int32}">
