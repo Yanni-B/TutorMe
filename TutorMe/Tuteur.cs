@@ -15,7 +15,10 @@ public class Tuteur
     public string Note { get; set; } = "";
 
     [MaxLength(250), Unique]
-    public int heureDebut { get; set; }
+    public int heureDebutLundi { get; set; }
+
+    [MaxLength(250), Unique]
+    public int heureDebutMardi { get; set; }
 
 
     //[MaxLength(250), Unique]

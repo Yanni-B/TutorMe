@@ -22,7 +22,8 @@ namespace TutorMe
                 {
                     Name = newPerson.Text,
                     Note = Note.Text,
-                    heureDebut = (int) pickerLundi.SelectedItem,          
+                    heureDebutLundi = (int) pickerLundi.SelectedItem,
+                    heureDebutMardi = (int)pickerMardi.SelectedItem,
                     //Horaire1 = Horaire1.Text,
                     //Horaire2 = Horaire2.Text,
                     //Horaire3 = Horaire3.Text

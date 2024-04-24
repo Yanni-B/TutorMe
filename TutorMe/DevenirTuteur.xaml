@@ -45,6 +45,7 @@
                         <x:Int32>15</x:Int32>
                         <x:Int32>16</x:Int32>
                         <x:Int32>17</x:Int32>
+                        <x:Int32>18</x:Int32>
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
