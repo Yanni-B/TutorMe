@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            
+             x:Class="TutorMe.PageAccueil">
+                
+
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <HorizontalStackLayout>
+                <Label x:Name="lblWelcomeMessage" FontSize="Large" HorizontalOptions="StartAndExpand" />
+                <Button Text="Sign Out" Clicked="SignOut_Clicked" HeightRequest="50" WidthRequest="120" CornerRadius="20" BackgroundColor="blue" Margin="1000,15,0,0"/>
+            </HorizontalStackLayout>
+
+            <Image Source="tutor.jpg" Aspect="AspectFill" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+
+            <Label
+     Text="Bienvenue dans notre application de tutorat."
+     Style="{StaticResource SubHeadline}"
+     SemanticProperties.HeadingLevel="Level2"/>
+
+            <Label
+Text="TUTORME"
+Style="{StaticResource Headline}"
+SemanticProperties.HeadingLevel="Level1" />
+
+            <Grid Margin="270,300,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="180" />
+                    <RowDefinition Height="180" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="430" />
+                    <ColumnDefinition Width="430" />
+                </Grid.ColumnDefinitions>
+
+                
+
+           
+
+
+            <Button
+                TextColor="White"
+                BackgroundColor="Blue"
+                LineBreakMode="WordWrap"
+                HeightRequest="150"
+                WidthRequest="400"
+                HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="5"
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="Avoir un tuteur."
+                Clicked="BoutonChangerTuteur"
+                Style="{StaticResource SubHeadline}"/>
+
+            <Button
+                TextColor="White"
+                BackgroundColor="CornflowerBlue"
+                LineBreakMode="WordWrap"
+                HeightRequest="150"
+                WidthRequest="400"
+                HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="5"
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="Devenir un tuteur."
+                Clicked="BoutonDevenirTuteur"
+                Style="{StaticResource SubHeadline}"/>
+
+
+            <Button
+                TextColor="White"
+                BackgroundColor="CornflowerBlue"
+                LineBreakMode="WordWrap"
+                HeightRequest="150"
+                WidthRequest="400"
+                HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="5"
+                Grid.Row="1"
+                Grid.Column="0"
+                x:Name="etud"
+                Text="Évaluation après chaque rencontre"
+                Style="{StaticResource SubHeadline}"
+                Clicked="BoutonCandid"/>
+
+            <Button
+                TextColor="WHITE"
+                BackgroundColor="CornflowerBlue"
+                LineBreakMode="WordWrap"
+                HeightRequest="150"
+                WidthRequest="400"
+                HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="5"
+                Grid.Row="1"
+                Grid.Column="1"
+                x:Name="tut"
+                Text="Évaluation après session (pour tuteur)"
+                Style="{StaticResource SubHeadline}"
+                Clicked="BoutonChercherTuteur"/>
+
+            <Button
+                TextColor="White"
+                BackgroundColor="BLUE"
+                LineBreakMode="WordWrap"
+                HeightRequest="150"
+                WidthRequest="400"
+                HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="5"
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="Ressources"
+                Style="{StaticResource SubHeadline}"
+                Clicked="BoutonRessource"/>
+               </Grid>
+        
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
+
+<!-- Source qui nous a aid� � naviguer entre les pages. -->
+<!-- Source : https://learn.microsoft.com/fr-fr/dotnet/maui/user-interface/pages/navigationpage?view=net-maui-8.0 -->
+<!-- Source2 : https://www.youtube.com/watch?v=G1ZQqzaILyY -->

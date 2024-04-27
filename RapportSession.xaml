@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutorMe.RapportSession"
+             Title="RapportSession">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="Évaluation après la session"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry x:Name="nomTuteur"
+                Placeholder="Nom du tuteur" />
+
+            <Entry x:Name="nomEleve"
+                Placeholder="Nom de l'élève" />
+
+            <Entry x:Name="NoteAvantSession"
+                Placeholder="Indiquez la note avant les séances" />
+
+            <Entry x:Name="NoteApresSession"
+                Placeholder="Indiquez la note après les séances" />
+
+            <Entry x:Name="Session"
+                Placeholder="Session : " />
+
+            <Entry x:Name="Cours"
+                Placeholder="Cours" />
+
+            <Entry x:Name="commentaireTuteur"
+                Placeholder="Commentaire : " />
+
+            <Button Text="Envoyer le rapport"
+	            Grid.Row="1"
+	            Clicked="save_Rapport" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

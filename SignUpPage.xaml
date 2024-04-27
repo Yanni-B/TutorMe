@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutorMe.SignUpPage"
+             Title="SignUpPage">
+    <VerticalStackLayout>
+        <StackLayout Padding="20">
+            <Entry x:Name="user" Placeholder="Username" />
+            <Entry x:Name="pass" Placeholder="Password" IsPassword="True" />
+
+            <Label Text="Are you a tutor?" VerticalOptions="Center" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="YesRadioButton" GroupName="TutorGroup"/>
+                <Label Text="Yes" VerticalOptions="Center" />
+                <RadioButton x:Name="NoRadioButton" GroupName="TutorGroup" />
+                <Label Text="No" VerticalOptions="Center" />
+            </StackLayout>
+
+            <Button Text="Sign Up" Clicked="OnSignUpButtonClicked" />
+        </StackLayout>
+
+    </VerticalStackLayout>
+   
+</ContentPage>
