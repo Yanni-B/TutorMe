@@ -1,0 +1,423 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\avoirtuteur.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:avoirtuteur.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\pageaccueil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:pageaccueil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\pageaccueil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:pageaccueil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\resources\\images\\tutor.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:resources\\images\\tutor.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\resources\\images\\dotnet_bot.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:resources\\images\\dotnet_bot.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\signuppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:signuppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\rapport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:rapport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\tuteur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:tuteur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Luderson\\AppData\\Local\\Temp\\.vsdbgsrc\\c3ff8f867779bdae4261f7bbbb293aef6220e713f710ed1aaab77dc7594b5d25\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\devenirtuteur.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:devenirtuteur.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\evalseance.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:evalseance.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|c:\\users\\2260491\\onedrive - c\u00E9gep marie-victorin\\desktop\\ecole\\hiver 2024\\dev-entreprise\\tutorme\\evalseance.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C970F-8C04-4611-BD45-6FAC4553F95A}|TutorMe.csproj|solutionrelative:evalseance.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-15T18:35:44.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PageAccueil.xaml",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\PageAccueil.xaml",
+              "RelativeDocumentMoniker": "PageAccueil.xaml",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\PageAccueil.xaml",
+              "RelativeToolTip": "PageAccueil.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-15T02:48:34.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowBQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T18:41:05.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AvoirTuteur.xaml",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\AvoirTuteur.xaml",
+              "RelativeDocumentMoniker": "AvoirTuteur.xaml",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\AvoirTuteur.xaml",
+              "RelativeToolTip": "AvoirTuteur.xaml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAwwDsAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-23T22:06:44.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PageAccueil.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\PageAccueil.xaml.cs",
+              "RelativeDocumentMoniker": "PageAccueil.xaml.cs",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\PageAccueil.xaml.cs",
+              "RelativeToolTip": "PageAccueil.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T21:00:40.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\Database.cs",
+              "RelativeDocumentMoniker": "Database.cs",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\Database.cs",
+              "RelativeToolTip": "Database.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGgAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T18:33:52.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\LoginPage.xaml.cs",
+              "RelativeToolTip": "LoginPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T21:01:01.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "LoginPage.xaml",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\LoginPage.xaml",
+              "RelativeToolTip": "LoginPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-22T21:00:56.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T21:00:54.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\Person.cs",
+              "RelativeDocumentMoniker": "Person.cs",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\Person.cs",
+              "RelativeToolTip": "Person.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T23:08:22.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Rapport.cs",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\Rapport.cs",
+              "RelativeDocumentMoniker": "Rapport.cs",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\Rapport.cs",
+              "RelativeToolTip": "Rapport.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T23:08:24.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-15T18:41:03.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Utilisateur.cs",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\Utilisateur.cs",
+              "RelativeDocumentMoniker": "Utilisateur.cs",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\Utilisateur.cs",
+              "RelativeToolTip": "Utilisateur.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T21:01:16.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Tuteur.cs",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\Tuteur.cs",
+              "RelativeDocumentMoniker": "Tuteur.cs",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\Tuteur.cs",
+              "RelativeToolTip": "Tuteur.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T21:01:18.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\AppShell.xaml.cs",
+              "RelativeToolTip": "AppShell.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T20:59:37.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dotnet_bot.png",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\Resources\\Images\\dotnet_bot.png",
+              "RelativeDocumentMoniker": "Resources\\Images\\dotnet_bot.png",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\Resources\\Images\\dotnet_bot.png",
+              "RelativeToolTip": "Resources\\Images\\dotnet_bot.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-04-24T01:23:26.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "tutor.jpg",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\Resources\\Images\\tutor.jpg",
+              "RelativeDocumentMoniker": "Resources\\Images\\tutor.jpg",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\Resources\\Images\\tutor.jpg",
+              "RelativeToolTip": "Resources\\Images\\tutor.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-04-24T01:24:47.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-22T21:02:36.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SignUpPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\SignUpPage.xaml.cs",
+              "RelativeDocumentMoniker": "SignUpPage.xaml.cs",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\SignUpPage.xaml.cs",
+              "RelativeToolTip": "SignUpPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:00:58.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SignUpPage.xaml",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\SignUpPage.xaml",
+              "RelativeDocumentMoniker": "SignUpPage.xaml",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\SignUpPage.xaml",
+              "RelativeToolTip": "SignUpPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-23T22:00:18.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EvalSeance.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\EvalSeance.xaml.cs",
+              "RelativeDocumentMoniker": "EvalSeance.xaml.cs",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\EvalSeance.xaml.cs",
+              "RelativeToolTip": "EvalSeance.xaml.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T21:01:08.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DevenirTuteur.xaml",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\DevenirTuteur.xaml",
+              "RelativeDocumentMoniker": "DevenirTuteur.xaml",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\DevenirTuteur.xaml",
+              "RelativeToolTip": "DevenirTuteur.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-22T21:03:27.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EvalSeance.xaml",
+              "DocumentMoniker": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\EvalSeance.xaml",
+              "RelativeDocumentMoniker": "EvalSeance.xaml",
+              "ToolTip": "C:\\Users\\2260491\\OneDrive - C\u00E9gep Marie-Victorin\\Desktop\\ECOLE\\HIVER 2024\\Dev-Entreprise\\TutorMe\\EvalSeance.xaml",
+              "RelativeToolTip": "EvalSeance.xaml",
+              "ViewState": "AQIAABgAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-22T21:02:54.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "App.g.i.cs [Read Only]",
+              "DocumentMoniker": "C:\\Users\\Luderson\\AppData\\Local\\Temp\\.vsdbgsrc\\c3ff8f867779bdae4261f7bbbb293aef6220e713f710ed1aaab77dc7594b5d25\\App.g.i.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Luderson\\AppData\\Local\\Temp\\.vsdbgsrc\\c3ff8f867779bdae4261f7bbbb293aef6220e713f710ed1aaab77dc7594b5d25\\App.g.i.cs",
+              "ToolTip": "C:\\Users\\Luderson\\AppData\\Local\\Temp\\.vsdbgsrc\\c3ff8f867779bdae4261f7bbbb293aef6220e713f710ed1aaab77dc7594b5d25\\App.g.i.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Luderson\\AppData\\Local\\Temp\\.vsdbgsrc\\c3ff8f867779bdae4261f7bbbb293aef6220e713f710ed1aaab77dc7594b5d25\\App.g.i.cs [Read Only]",
+              "ViewState": "AQIAACkAAAAAAAAAAAAiwEMAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T21:20:48.939Z",
+              "EditorCaption": " [Read Only]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
