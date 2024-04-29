@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutorMe.EvalSeance"
+             Title="EvalSeance">
+
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="Évaluation à faire après chaque séance."
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry x:Name="nomTuteur"
+                Placeholder="Nom du tuteur" />
+
+            <Entry x:Name="nomEleve"
+                Placeholder="Nom de l'élève" />
+
+            <Entry x:Name="date"
+                Placeholder="Indiquez la date" />
+
+            <Entry x:Name="cours"
+                Placeholder="Cours : " />
+
+            <Entry x:Name="session"
+                Placeholder="Session : " />
+
+            <Entry x:Name="noteSeance"
+                Placeholder="Note sur 5" />
+
+            <Entry x:Name="commentaireTuteur"
+                Placeholder="Commentaire : " />
+
+
+            <Button Text="Envoyer l'évaluation"
+				Grid.Row="1"
+				Clicked="saveButton_Clicked" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
