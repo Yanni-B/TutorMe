@@ -1,2 +1,27 @@
-# GitHub projet entreprise
-Le code se trouver dans la branche DEV
+# TutorMe
+
+ &nbsp; Branch : dev
+
+
+## Auteurs
+ &nbsp; 🧍 [@LudersonDominique](https://www.github.com/luderson2)
+ 
+ &nbsp; 🧍 [@GaelDesforges-Paquin](https://www.github.com/GaelDPaquin)
+ 
+ &nbsp; 🧍 [@NissiaLeslineGansaore](https://www.github.com/NotaroNissia)
+ 
+ &nbsp; 🧍 [@YanniBourechouche](https://www.github.com/Yanni-B)
+ 
+ &nbsp; 🧍 [@Nassimelhaji](https://www.github.com/Nassimelhaji)
+ 
+ 
+
+## Procédure
+  - Cliquez sur Code, puis copiez l'adresse https://github.com/Yanni-B/TutorMe.git.
+  - Ouvrez l'application Microsoft Visual Studio.
+  - Dans la barre de menus, cliquez sur "Git" puis sur "Cloner un dépôt...".
+  - Collez le lien précédemment copié dans le champ "URL du dépôt".
+  - Choisissez un dossier où cloner le dépôt, puis cliquez sur "Cloner".
+  - Pour changer de branche à la branche "dev", cliquez sur la branche actuelle "main" dans le coin inférieur droit de l'écran, puis sélectionnez la branche "dev" dans la liste des branches distantes.
+  - Ouvrez le fichier .sln pour ouvrir le projet dans Visual Studio.
+  - Vous pouvez maintenant utiliser les différents services offerts par l'application.
