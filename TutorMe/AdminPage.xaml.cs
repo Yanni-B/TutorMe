@@ -104,41 +104,142 @@ public partial class AdminPage : ContentPage
         {
             foreach (var tuteur in tuteurs)
             {
+                int heureDebutMatch;
+                int heureFinMatch;
+                string jourMatch;
+
                 // Vérifier si les choix de disponibilité de l'étudiant correspondent à ceux du tuteur
-                if (ChoixDisponibiliteCorrespond(etudiant, tuteur))
+                if (ChoixDisponibiliteCorrespond(etudiant, tuteur, out heureDebutMatch, out heureFinMatch, out jourMatch))
                 {
                     // Afficher le match
                     infoLabel.Text = $"Match trouvé: Étudiant - {etudiant.Name}, Tuteur - {tuteur.Name}";
+
+                    // Ajouter le match à la liste des correspondances
+                    MatchingInfo.MatchingList.Add(new MatchingInfo
+                    {
+                        TutorName = tuteur.Name,
+                        StudentName = etudiant.Name,
+                        jour = jourMatch,
+                        heureDebut =  heureDebutMatch,
+                        heureFin = heureFinMatch,
+                        
+                    }) ;
+
+                    // Afficher les correspondances pour toutes les semaines
+                    StringBuilder matchingsBuilder = new StringBuilder();
+
+                    // Afficher les semaines
+                    matchingsBuilder.AppendLine($"Voici les rendez-vous planifié pour cette session entre le tuteur {tuteur.Name} et l'étudiant {etudiant.Name}:");
+                    matchingsBuilder.AppendLine();
+
+                    for (int semaine = 1; semaine <= 10; semaine++)
+                    {
+                        matchingsBuilder.AppendLine($"Semaine {semaine}:");
+                        foreach (var matching in MatchingInfo.MatchingList)
+                        {
+                            matchingsBuilder.AppendLine($"Date : {matching.jour} de {matching.heureDebut}h à {matching.heureFin}h \nTuteur: {matching.TutorName} \nÉtudiant: {matching.StudentName} \nCours de français #{matching.Cours}");
+                        }
+                        matchingsBuilder.AppendLine(); // Ajoute une ligne vide entre chaque semaine
+                    }
+
+                    // Mettre à jour le texte du label avec les matchings pour toutes les semaines
+                    infoLabel.Text = matchingsBuilder.ToString();
                     return;
                 }
             }
         }
-            
+
         infoLabel.Text = "Aucun match trouvé";
     }
 
-    private bool ChoixDisponibiliteCorrespond(Person etudiant, Tuteur tuteur)
+
+    private bool ChoixDisponibiliteCorrespond(Person etudiant, Tuteur tuteur, out int heureDebutMatch, out int heureFinMatch, out string jourMatch)
     {
         // Comparer les neuf combinaisons possibles de choix de disponibilité
-        return ComparerChoixDisponibilite(etudiant.choix1jour, etudiant.choix1heureDebut, etudiant.choix1heureFin,
-                                          tuteur.choix1jour, tuteur.choix1heureDebut, tuteur.choix1heureFin) ||
-               ComparerChoixDisponibilite(etudiant.choix1jour, etudiant.choix1heureDebut, etudiant.choix1heureFin,
-                                          tuteur.choix2jour, tuteur.choix2heureDebut, tuteur.choix2heureFin) ||
-               ComparerChoixDisponibilite(etudiant.choix1jour, etudiant.choix1heureDebut, etudiant.choix1heureFin,
-                                          tuteur.choix3jour, tuteur.choix3heureDebut, tuteur.choix3heureFin) ||
-               ComparerChoixDisponibilite(etudiant.choix2jour, etudiant.choix2heureDebut, etudiant.choix2heureFin,
-                                          tuteur.choix1jour, tuteur.choix1heureDebut, tuteur.choix1heureFin) ||
-               ComparerChoixDisponibilite(etudiant.choix2jour, etudiant.choix2heureDebut, etudiant.choix2heureFin,
-                                          tuteur.choix2jour, tuteur.choix2heureDebut, tuteur.choix2heureFin) ||
-               ComparerChoixDisponibilite(etudiant.choix2jour, etudiant.choix2heureDebut, etudiant.choix2heureFin,
-                                          tuteur.choix3jour, tuteur.choix3heureDebut, tuteur.choix3heureFin) ||
-               ComparerChoixDisponibilite(etudiant.choix3jour, etudiant.choix3heureDebut, etudiant.choix3heureFin,
-                                          tuteur.choix1jour, tuteur.choix1heureDebut, tuteur.choix1heureFin) ||
-               ComparerChoixDisponibilite(etudiant.choix3jour, etudiant.choix3heureDebut, etudiant.choix3heureFin,
-                                          tuteur.choix2jour, tuteur.choix2heureDebut, tuteur.choix2heureFin) ||
-               ComparerChoixDisponibilite(etudiant.choix3jour, etudiant.choix3heureDebut, etudiant.choix3heureFin,
-                                          tuteur.choix3jour, tuteur.choix3heureDebut, tuteur.choix3heureFin);
+        if (ComparerChoixDisponibilite(etudiant.choix1jour, etudiant.choix1heureDebut, etudiant.choix1heureFin,
+                                        tuteur.choix1jour, tuteur.choix1heureDebut, tuteur.choix1heureFin))
+        {
+            jourMatch = etudiant.choix1jour;
+            heureDebutMatch = etudiant.choix1heureDebut;
+            heureFinMatch = etudiant.choix1heureFin;
+            return true;
+        }
+        else if (ComparerChoixDisponibilite(etudiant.choix1jour, etudiant.choix1heureDebut, etudiant.choix1heureFin,
+                                             tuteur.choix2jour, tuteur.choix2heureDebut, tuteur.choix2heureFin))
+        {
+            jourMatch = etudiant.choix1jour;
+            heureDebutMatch = etudiant.choix1heureDebut;
+            heureFinMatch = etudiant.choix1heureFin;
+            return true;
+        }
+        else if (ComparerChoixDisponibilite(etudiant.choix1jour, etudiant.choix1heureDebut, etudiant.choix1heureFin,
+                                             tuteur.choix3jour, tuteur.choix3heureDebut, tuteur.choix3heureFin))
+        {
+
+            jourMatch = etudiant.choix1jour;
+            heureDebutMatch = etudiant.choix1heureDebut;
+            heureFinMatch = etudiant.choix1heureFin;
+            return true;
+        }
+        else if (ComparerChoixDisponibilite(etudiant.choix2jour, etudiant.choix2heureDebut, etudiant.choix2heureFin,
+                                             tuteur.choix1jour, tuteur.choix1heureDebut, tuteur.choix1heureFin))
+        {
+            jourMatch = etudiant.choix2jour;
+            heureDebutMatch = etudiant.choix2heureDebut;
+            heureFinMatch = etudiant.choix2heureFin;
+            return true;
+        }
+        else if (ComparerChoixDisponibilite(etudiant.choix2jour, etudiant.choix2heureDebut, etudiant.choix2heureFin,
+                                             tuteur.choix2jour, tuteur.choix2heureDebut, tuteur.choix2heureFin))
+        {
+
+            jourMatch = etudiant.choix2jour;
+            heureDebutMatch = etudiant.choix2heureDebut;
+            heureFinMatch = etudiant.choix2heureFin;
+            return true;
+        }
+        else if (ComparerChoixDisponibilite(etudiant.choix2jour, etudiant.choix2heureDebut, etudiant.choix2heureFin,
+                                             tuteur.choix3jour, tuteur.choix3heureDebut, tuteur.choix3heureFin))
+        {
+
+            jourMatch = etudiant.choix2jour;
+            heureDebutMatch = etudiant.choix2heureDebut;
+            heureFinMatch = etudiant.choix2heureFin;
+            return true;
+        }
+        else if (ComparerChoixDisponibilite(etudiant.choix3jour, etudiant.choix3heureDebut, etudiant.choix3heureFin,
+                                             tuteur.choix1jour, tuteur.choix1heureDebut, tuteur.choix1heureFin))
+        {
+
+            jourMatch = etudiant.choix3jour;
+            heureDebutMatch = etudiant.choix3heureDebut;
+            heureFinMatch = etudiant.choix3heureFin;
+            return true;
+        }
+        else if (ComparerChoixDisponibilite(etudiant.choix3jour, etudiant.choix3heureDebut, etudiant.choix3heureFin,
+                                             tuteur.choix2jour, tuteur.choix2heureDebut, tuteur.choix2heureFin))
+        {
+
+            jourMatch = etudiant.choix3jour;
+            heureDebutMatch = etudiant.choix3heureDebut;
+            heureFinMatch = etudiant.choix3heureFin;
+            return true;
+        }
+        else if (ComparerChoixDisponibilite(etudiant.choix3jour, etudiant.choix3heureDebut, etudiant.choix3heureFin,
+                                             tuteur.choix3jour, tuteur.choix3heureDebut, tuteur.choix3heureFin))
+        {
+            jourMatch = etudiant.choix3jour;
+            heureDebutMatch = etudiant.choix3heureDebut;
+            heureFinMatch = etudiant.choix3heureFin;
+            return true;
+        }
+
+        jourMatch = null;
+        heureDebutMatch = 0;
+        heureFinMatch = 0;
+        return false;
     }
+
 
     private bool ComparerChoixDisponibilite(string jourEtudiant, int heureDebutEtudiant, int heureFinEtudiant,
                                              string jourTuteur, int heureDebutTuteur, int heureFinTuteur)
@@ -149,7 +250,7 @@ public partial class AdminPage : ContentPage
                heureFinEtudiant == heureFinTuteur;
     }
 
-
+   
 
 
 }

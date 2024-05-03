@@ -186,6 +186,19 @@
 
 
             </StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Label Text="Cours" VerticalOptions="Center" />
+                <Picker x:Name="pickerCours" Title="Choisissez votre cours de francais actuel" VerticalOptions="Center">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:Int32}">
+                            <x:Int32>1</x:Int32>
+                            <x:Int32>2</x:Int32>
+                            <x:Int32>3</x:Int32>
+                            <x:Int32>4</x:Int32>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </StackLayout>
 
             <Entry x:Name="texte"
                 Placeholder="Veuillez écrire un texte pour vérifier votre français." />

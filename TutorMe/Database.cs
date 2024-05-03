@@ -23,6 +23,7 @@ namespace TutorMe
             connection.CreateTableAsync<Eval>();
             connection.CreateTableAsync<Rapport>();
             connection.CreateTableAsync<Utilisateur>();
+            connection.CreateTableAsync<MatchingInfo>();
         }
 
         public async Task InitializeAsync()
@@ -183,7 +184,6 @@ namespace TutorMe
         }
 
 
-        
     }
    
 

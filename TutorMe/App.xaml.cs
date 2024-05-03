@@ -23,7 +23,7 @@ namespace TutorMe
 
             // Asynchronously initialize the database and add the user
             Database database = new Database();
-            
+           
             
             await database.InitializeAsync();
            

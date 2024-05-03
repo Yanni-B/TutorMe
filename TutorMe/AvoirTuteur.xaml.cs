@@ -14,6 +14,7 @@ namespace TutorMe
             database = dbService;
         }
 
+
         private async void saveButton_Clicked(object sender, EventArgs e)
         {
             if (editClientId == 0)
@@ -32,7 +33,9 @@ namespace TutorMe
                     choix3jour = (string) pickerJour3.SelectedItem,
                     choix3heureDebut = (int) pickerHeureDebut3.SelectedItem,
                     choix3heureFin = (int) pickerHeureFin3.SelectedItem,
+                    choixCours = (int) pickerCours.SelectedItem
                 });
+
                 await DisplayAlert("Succès", "Votre candidature a bien été envoyé", "OK");
 
                 await Navigation.PopAsync();
