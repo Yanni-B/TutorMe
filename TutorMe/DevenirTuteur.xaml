@@ -15,10 +15,24 @@
                 Placeholder="Veuillez indiquer votre relevé de note" />
 
 
-            <StackLayout Orientation="Horizontal" Margin="30">
-                <Label Margin="0, 0, 30, 0" VerticalOptions="Start" Text="Lundi"></Label>
-                <Picker WidthRequest="180" Margin="0, 0, 20, 0" HorizontalOptions="Center" VerticalOptions="End" MaximumWidthRequest="250" x:Name="pickerLundi"
-                    Title="Choissisez l'heure de départ">
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <!-- Jour -->
+                <Label Text="Jour" VerticalOptions="Center" />
+                <Picker x:Name="pickerJour1" Title="Choisissez le jour" VerticalOptions="Center">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Lundi</x:String>
+                            <x:String>Mardi</x:String>
+                            <x:String>Mercredi</x:String>
+                            <x:String>Jeudi</x:String>
+                            <x:String>Vendredi</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+
+                <Label Text="HeureDebut" VerticalOptions="Center" />
+                <Picker x:Name="pickerHeureDebut1" Title="Choisissez l'heure" VerticalOptions="Center">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:Int32}">
                             <x:Int32>8</x:Int32>
@@ -35,8 +49,8 @@
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
-                <Picker WidthRequest="180" HorizontalOptions="Center" VerticalOptions="End" MaximumWidthRequest="250" x:Name="pickerLundiEnd"
-                    Title="Choissisez l'heure de fin">
+                <Label Text="HeureFin" VerticalOptions="Center" />
+                <Picker x:Name="pickerHeureFin1" Title="Choisissez l'heure" VerticalOptions="Center">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:Int32}">
                             <x:Int32>8</x:Int32>
@@ -53,11 +67,27 @@
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
+
+
             </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="30">
-                <Label Margin="0, 0, 30, 0" VerticalOptions="Start" Text="Mardi"></Label>
-                <Picker WidthRequest="180" Margin="0, 0, 20, 0" HorizontalOptions="Center" VerticalOptions="End" MaximumWidthRequest="250" x:Name="pickerMardi">
-                    
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <!-- Jour -->
+                <Label Text="Jour" VerticalOptions="Center" />
+                <Picker x:Name="pickerJour2" Title="Choisissez le jour" VerticalOptions="Center">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Lundi</x:String>
+                            <x:String>Mardi</x:String>
+                            <x:String>Mercredi</x:String>
+                            <x:String>Jeudi</x:String>
+                            <x:String>Vendredi</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+
+                <Label Text="HeureDebut" VerticalOptions="Center" />
+                <Picker x:Name="pickerHeureDebut2" Title="Choisissez l'heure" VerticalOptions="Center">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:Int32}">
                             <x:Int32>8</x:Int32>
@@ -74,7 +104,8 @@
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
-                <Picker WidthRequest="180" HorizontalOptions="Center" VerticalOptions="End" MaximumWidthRequest="250" x:Name="pickerMardiEnd">
+                <Label Text="HeureFin" VerticalOptions="Center" />
+                <Picker x:Name="pickerHeureFin2" Title="Choisissez l'heure" VerticalOptions="Center">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:Int32}">
                             <x:Int32>8</x:Int32>
@@ -91,10 +122,27 @@
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
+
+
             </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="30">
-                <Label Margin="0, 0, 30, 0" VerticalOptions="Start" Text="Mercredi"></Label>
-                <Picker WidthRequest="180" Margin="0, 0, 20, 0" HorizontalOptions="Center" VerticalOptions="End" MaximumWidthRequest="250" x:Name="pickerMercredi">
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <!-- Jour -->
+                <Label Text="Jour" VerticalOptions="Center" />
+                <Picker x:Name="pickerJour3" Title="Choisissez le jour" VerticalOptions="Center">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Lundi</x:String>
+                            <x:String>Mardi</x:String>
+                            <x:String>Mercredi</x:String>
+                            <x:String>Jeudi</x:String>
+                            <x:String>Vendredi</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+
+                <Label Text="HeureDebut" VerticalOptions="Center" />
+                <Picker x:Name="pickerHeureDebut3" Title="Choisissez l'heure" VerticalOptions="Center">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:Int32}">
                             <x:Int32>8</x:Int32>
@@ -111,7 +159,8 @@
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
-                <Picker WidthRequest="180" HorizontalOptions="Center" VerticalOptions="End" MaximumWidthRequest="250" x:Name="pickerMercrediEnd">
+                <Label Text="HeureFin" VerticalOptions="Center" />
+                <Picker x:Name="pickerHeureFin3" Title="Choisissez l'heure" VerticalOptions="Center">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:Int32}">
                             <x:Int32>8</x:Int32>
@@ -128,80 +177,8 @@
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="30">
-                <Label Margin="0, 0, 30, 0" VerticalOptions="Start" Text="Jeudi"></Label>
-                <Picker WidthRequest="180" Margin="0, 0, 20, 0" HorizontalOptions="Center" VerticalOptions="End" MaximumWidthRequest="250" x:Name="pickerJeudi">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:Int32}">
-                            <x:Int32>8</x:Int32>
-                            <x:Int32>9</x:Int32>
-                            <x:Int32>10</x:Int32>
-                            <x:Int32>11</x:Int32>
-                            <x:Int32>12</x:Int32>
-                            <x:Int32>13</x:Int32>
-                            <x:Int32>14</x:Int32>
-                            <x:Int32>15</x:Int32>
-                            <x:Int32>16</x:Int32>
-                            <x:Int32>17</x:Int32>
-                            <x:Int32>18</x:Int32>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-                <Picker WidthRequest="180" HorizontalOptions="Center" VerticalOptions="End" MaximumWidthRequest="250" x:Name="pickerJeudiEnd">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:Int32}">
-                            <x:Int32>8</x:Int32>
-                            <x:Int32>9</x:Int32>
-                            <x:Int32>10</x:Int32>
-                            <x:Int32>11</x:Int32>
-                            <x:Int32>12</x:Int32>
-                            <x:Int32>13</x:Int32>
-                            <x:Int32>14</x:Int32>
-                            <x:Int32>15</x:Int32>
-                            <x:Int32>16</x:Int32>
-                            <x:Int32>17</x:Int32>
-                            <x:Int32>18</x:Int32>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="30">
-                <Label Margin="0, 0, 30, 0" VerticalOptions="Start" Text="Vendredi"></Label>
-                <Picker WidthRequest="180" Margin="0, 0, 20, 0" HorizontalOptions="Center" VerticalOptions="End" MaximumWidthRequest="250" x:Name="pickerVendredi">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:Int32}">
-                            <x:Int32>8</x:Int32>
-                            <x:Int32>9</x:Int32>
-                            <x:Int32>10</x:Int32>
-                            <x:Int32>11</x:Int32>
-                            <x:Int32>12</x:Int32>
-                            <x:Int32>13</x:Int32>
-                            <x:Int32>14</x:Int32>
-                            <x:Int32>15</x:Int32>
-                            <x:Int32>16</x:Int32>
-                            <x:Int32>17</x:Int32>
-                            <x:Int32>18</x:Int32>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-                <Picker WidthRequest="180" HorizontalOptions="Center" VerticalOptions="End" MaximumWidthRequest="250" x:Name="pickerVendrediEnd">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:Int32}">
-                            <x:Int32>8</x:Int32>
-                            <x:Int32>9</x:Int32>
-                            <x:Int32>10</x:Int32>
-                            <x:Int32>11</x:Int32>
-                            <x:Int32>12</x:Int32>
-                            <x:Int32>13</x:Int32>
-                            <x:Int32>14</x:Int32>
-                            <x:Int32>15</x:Int32>
-                            <x:Int32>16</x:Int32>
-                            <x:Int32>17</x:Int32>
-                            <x:Int32>18</x:Int32>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
+
+
             </StackLayout>
 
 

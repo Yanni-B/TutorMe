@@ -9,7 +9,7 @@
         }
         private void BoutonChangerDePage(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new PageAccueil());
+            
         }
     }
 
