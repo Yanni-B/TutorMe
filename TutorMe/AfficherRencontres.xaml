@@ -10,6 +10,22 @@
             VerticalOptions="Start" 
             HorizontalOptions="Center" />
         </VerticalStackLayout>
+        <Grid>
+            <Grid>
+                <Label
+                    Text="Date"
+                    HorizontalOptions="Start"
+                    ></Label>
+                <Label
+                    Text="Cours"
+                    HorizontalOptions="Center"
+                    ></Label>
+                <Label
+                    Text="Heure"
+                    HorizontalOptions="End"
+                    ></Label>
+            </Grid>
+        </Grid>
     </ScrollView>
     
 </ContentPage>
