@@ -35,8 +35,12 @@ namespace TutorMe
                 tut2.IsVisible = false;
             }
 
-          
 
+            void BoutonAfficherRencontres(object sender, EventArgs e)
+            {
+                var database = new Database();
+                Navigation.PushAsync(new AfficherRencontres(user, database));
+            }
         }
         private void BoutonChangerTuteur(object sender, EventArgs e)
         {
@@ -70,11 +74,7 @@ namespace TutorMe
             Navigation.PushAsync(new Ressource());
         }
 
-        private void BoutonAfficherRencontres(object sender, EventArgs e)
-        {
-            var database = new Database();
-            Navigation.PushAsync(new AfficherRencontres(database));
-        }
+        
 
         private async void SignOut_Clicked(object sender, EventArgs e)
         {

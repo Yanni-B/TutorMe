@@ -12,18 +12,21 @@
         </VerticalStackLayout>
         <Grid>
             <Grid>
-                <Label
+                <Button Clicked="showRencontres" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Start"></Button>
+                <!--<Label
                     Text="Date"
                     HorizontalOptions="Start"
                     ></Label>
                 <Label
                     Text="Heure"
-                    HorizontalOptions="End"
+                    HorizontalOptions="Center"
                     ></Label>
                 <Label
                     Text="Nom de l'autre"
                     HorizontalOptions="End"
-                    ></Label>
+                    ></Label>-->
+                <Label x:Name="showMatchings" VerticalOptions="Center" Text="Blabla"></Label>
+
             </Grid>
         </Grid>
     </ScrollView>

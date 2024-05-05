@@ -103,7 +103,7 @@ namespace TutorMe
         }
         public async Task<MatchingInfo> GetByIdMatch(int id)
         {
-            return await connection.Table<MatchingInfo>().Where(x => x.Id == id).FirstOrDefaultAsync();
+            return await connection.Table<MatchingInfo>().Where(x => x.IdTutor == id || x.IdTutored == id).FirstOrDefaultAsync();
         }
 
         public async Task<Utilisateur> GetUserByUsername(string username)
