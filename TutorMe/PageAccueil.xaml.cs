@@ -25,12 +25,14 @@ namespace TutorMe
                 // Show the button for tutor evaluation and hide the button for session evaluation
                 etud.IsVisible = false;
                 tut.IsVisible = true;
+                tut2.IsVisible = true;
             }
             else
             {
                 // Show the button for session evaluation and hide the button for tutor evaluation
                 etud.IsVisible = true;
                 tut.IsVisible = false;
+                tut2.IsVisible = false;
             }
 
           
@@ -50,7 +52,7 @@ namespace TutorMe
         }
 
 
-        private void BoutonCandid(object sender, EventArgs e)
+        private void BoutonEval(object sender, EventArgs e)
         {
             var database = new Database();
             Navigation.PushAsync(new EvalSeance(database));
@@ -62,9 +64,16 @@ namespace TutorMe
             Navigation.PushAsync(new RapportSession(database));
         }
 
+
         private void BoutonRessource(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Ressource());
+        }
+
+        private void BoutonAfficherRencontres(object sender, EventArgs e)
+        {
+            var database = new Database();
+            Navigation.PushAsync(new AfficherRencontres(database));
         }
 
         private async void SignOut_Clicked(object sender, EventArgs e)

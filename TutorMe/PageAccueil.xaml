@@ -31,7 +31,7 @@
             Style="{StaticResource Headline}"
             SemanticProperties.HeadingLevel="Level1" /> 
 
-            <Grid Margin="270,70,0,0">
+            <Grid Margin="0,70,0,0" HorizontalOptions="Center">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="180" />
                     <RowDefinition Height="180" />
@@ -85,7 +85,7 @@
                 x:Name="etud"
                 Text="Évaluation après chaque rencontre"
                 Style="{StaticResource SubHeadline}"
-                Clicked="BoutonCandid"/>
+                Clicked="BoutonEval"/>
 
             <Button
                 TextColor="WHITE"
@@ -96,7 +96,7 @@
                 HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="5"
                 Grid.Row="1"
                 Grid.Column="0"
-                x:Name="tut"
+                x:Name="tut2"
                 Text="Évaluation après session (pour tuteur)"
                 Style="{StaticResource SubHeadline}"
                 Clicked="BoutonChercherTuteur"/>
@@ -113,8 +113,24 @@
                 Text="Ressources"
                 Style="{StaticResource SubHeadline}"
                 Clicked="BoutonRessource"/>
-               </Grid>
-        
+
+            
+            </Grid>
+            <Button
+                TextColor="WHITE"
+                BackgroundColor="LightGray"
+                LineBreakMode="WordWrap"
+                HeightRequest="150"
+                WidthRequest="400"
+                HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Margin="5"
+                Grid.Row="1"
+                Grid.Column="0"
+                x:Name="tut"
+                Text="Voir les rencontres futures"
+                Style="{StaticResource SubHeadline}"
+                Clicked="BoutonAfficherRencontres"/>
+                   
+
 
         </VerticalStackLayout>
     </ScrollView>

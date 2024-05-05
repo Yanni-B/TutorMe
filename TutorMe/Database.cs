@@ -24,6 +24,7 @@ namespace TutorMe
             connection.CreateTableAsync<Rapport>();
             connection.CreateTableAsync<Utilisateur>();
             connection.CreateTableAsync<MatchingInfo>();
+            connection.CreateTableAsync<Rencontres>();
         }
 
         public async Task InitializeAsync()
@@ -71,6 +72,10 @@ namespace TutorMe
             return await connection.Table<Rapport>().ToListAsync();
         }
 
+        public async Task<List<Rencontres>> GetRencontres()
+        {
+            return await connection.Table<Rencontres>().ToListAsync();
+        }
         // Chercher l'ID
         public async Task<Person> GetByIdPerson(int id)
         {
