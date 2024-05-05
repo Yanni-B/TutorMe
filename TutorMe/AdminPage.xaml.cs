@@ -117,13 +117,15 @@ public partial class AdminPage : ContentPage
                     // Ajouter le match à la liste des correspondances
                     MatchingInfo.MatchingList.Add(new MatchingInfo
                     {
-                        TutorName = tuteur.Name,
-                        StudentName = etudiant.Name,
+                        IdTutor = tuteur.Id,
+                        IdTutored = etudiant.Id,
                         jour = jourMatch,
                         heureDebut =  heureDebutMatch,
                         heureFin = heureFinMatch,
                         
                     }) ;
+
+                    database.AddMatch(tuteur.Id, etudiant.Id, heureDebutMatch, heureFinMatch, jourMatch, 1);
 
                     // Afficher les correspondances pour toutes les semaines
                     StringBuilder matchingsBuilder = new StringBuilder();
@@ -137,7 +139,7 @@ public partial class AdminPage : ContentPage
                         matchingsBuilder.AppendLine($"Semaine {semaine}:");
                         foreach (var matching in MatchingInfo.MatchingList)
                         {
-                            matchingsBuilder.AppendLine($"Date : {matching.jour} de {matching.heureDebut}h à {matching.heureFin}h \nTuteur: {matching.TutorName} \nÉtudiant: {matching.StudentName} \nCours de français #{matching.Cours}");
+                            matchingsBuilder.AppendLine($"Date : {matching.jour} de {matching.heureDebut}h à {matching.heureFin}h \nTuteur: {matching.IdTutor} \nÉtudiant: {matching.IdTutored} \nCours de français #{matching.cours}");
                         }
                         matchingsBuilder.AppendLine(); // Ajoute une ligne vide entre chaque semaine
                     }

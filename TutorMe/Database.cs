@@ -72,6 +72,11 @@ namespace TutorMe
             return await connection.Table<Rapport>().ToListAsync();
         }
 
+        public async Task<List<MatchingInfo>> GetMatching()
+        {
+            return await connection.Table<MatchingInfo>().ToListAsync();
+        }
+
         public async Task<List<Rencontres>> GetRencontres()
         {
             return await connection.Table<Rencontres>().ToListAsync();
@@ -96,6 +101,10 @@ namespace TutorMe
         {
             return await connection.Table<Rapport>().Where(x => x.Id == id).FirstOrDefaultAsync();
         }
+        public async Task<MatchingInfo> GetByIdMatch(int id)
+        {
+            return await connection.Table<MatchingInfo>().Where(x => x.Id == id).FirstOrDefaultAsync();
+        }
 
         public async Task<Utilisateur> GetUserByUsername(string username)
         {
@@ -110,6 +119,10 @@ namespace TutorMe
         public async Task<List<Tuteur>> GetAllTuteurs()
         {
             return await connection.Table<Tuteur>().ToListAsync();
+        }
+        public async Task<List<MatchingInfo>> GetAllMatching()
+        {
+            return await connection.Table<MatchingInfo>().ToListAsync();
         }
 
 
@@ -144,6 +157,21 @@ namespace TutorMe
             };
 
             await connection.InsertAsync(adminUser);
+        }
+
+        public async Task AddMatch(int IdTutor, int IdTutored, int heureDebut, int heureFin, string jour, int cours)
+        {
+            var match = new MatchingInfo
+            {
+                IdTutor = IdTutor,
+                IdTutored = IdTutored,
+                heureDebut = heureDebut, 
+                heureFin = heureFin,
+                jour = jour,
+                cours = cours
+            };
+
+            await connection.InsertAsync(match);
         }
 
         public async Task DeleteAllUsers()
@@ -186,6 +214,11 @@ namespace TutorMe
         public async Task Create(Rapport rapport)
         {
             await connection.InsertAsync(rapport);
+        }
+
+        public async Task Create(MatchingInfo matching)
+        {
+            await connection.InsertAsync(matching);
         }
 
 

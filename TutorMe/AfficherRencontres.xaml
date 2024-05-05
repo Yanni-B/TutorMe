@@ -17,11 +17,11 @@
                     HorizontalOptions="Start"
                     ></Label>
                 <Label
-                    Text="Cours"
-                    HorizontalOptions="Center"
+                    Text="Heure"
+                    HorizontalOptions="End"
                     ></Label>
                 <Label
-                    Text="Heure"
+                    Text="Nom de l'autre"
                     HorizontalOptions="End"
                     ></Label>
             </Grid>
