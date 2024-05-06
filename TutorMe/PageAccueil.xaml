@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutorMe.PageAccueil"
+             BackgroundImageSource="N:\telechargement\TutorMe-uranium\TutorMe-master\TutorMe\Resources\Images\background.jpg"
+             
+            
+             >
+    <ContentPage.Background>
+        <LinearGradientBrush>
+            <GradientStop Offset="0.1" Color="#274472"/>
+
+            <GradientStop Offset="1.0" Color="#41729F"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+
+
+
+    <ScrollView >
+        <VerticalStackLayout    
+            Padding="30,0"
+            Spacing="25">
+            <HorizontalStackLayout >
+                <Label x:Name="lblWelcomeMessage" TextColor="white" FontSize="Large" HorizontalOptions="StartAndExpand"  Padding="10" Margin="0,15" FontFamily="KG"/>
+                <Button Text="Sign Out" Clicked="SignOut_Clicked" HeightRequest="50" WidthRequest="120" CornerRadius="20" BackgroundColor="#0C2D48" Margin="1500,10,0,0" FontFamily="KG" FontSize="30" />
+            </HorizontalStackLayout>
+
+
+
+            <StackLayout>
+                <Label FontFamily="KG" FontSize="50"
+                    TextColor="Black"
+                 Text="Bienvenue dans notre application de tutorat."
+                 Style="{StaticResource SubHeadline}"
+                 SemanticProperties.HeadingLevel="Level2"/>
+
+                <Label
+                    TextColor="black" 
+                Text="TUTORME" FontFamily="KG"  FontSize="70"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            </StackLayout>
+
+            <Grid Margin="500,70,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="180" />
+                    <RowDefinition Height="180" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="430" />
+                    <ColumnDefinition Width="430" />
+                </Grid.ColumnDefinitions>
+
+
+
+
+
+
+                <Button  FontFamily="KG" FontSize="40"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    LineBreakMode="WordWrap"
+                    HeightRequest="150"
+                    WidthRequest="400"
+                    HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="5"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Avoir un tuteur."
+                    Clicked="BoutonChangerTuteur"  
+                    Style="{StaticResource SubHeadline}">
+                    <VisualStateManager.VisualStateGroups>
+
+                    </VisualStateManager.VisualStateGroups>
+                </Button>
+
+                <Button  FontFamily="KG" FontSize="40"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    LineBreakMode="WordWrap"
+                    HeightRequest="150"
+                    WidthRequest="400"
+                    HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="5"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="Devenir un tuteur."
+                    Clicked="BoutonDevenirTuteur"
+                    Style="{StaticResource SubHeadline}"/>
+
+
+                <Button
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    LineBreakMode="WordWrap"
+                    HeightRequest="150"
+                    WidthRequest="400"
+                    HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="5"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    x:Name="etud"
+                    Text="Évaluation après chaque rencontre"
+                    Style="{StaticResource SubHeadline}"
+                    Clicked="BoutonEval"/>
+
+                <Button  FontFamily="KG" FontSize="40"
+                    TextColor="WHITE"
+                    BackgroundColor="Black"
+                    LineBreakMode="WordWrap"
+                    HeightRequest="150"
+                    WidthRequest="400"
+                    HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="5"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    x:Name="tut2"
+                    Text="Évaluation après session (pour tuteur)"
+                    Style="{StaticResource SubHeadline}"
+                    Clicked="BoutonChercherTuteur"/>
+
+                <Button  FontFamily="KG" FontSize="40"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    LineBreakMode="WordWrap"
+                    HeightRequest="150"
+                    WidthRequest="400"
+                    HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="5"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Text="Ressources"
+                    Style="{StaticResource SubHeadline}"
+                    Clicked="BoutonRessource"/>
+            </Grid>
+            <Button  FontFamily="KG" FontSize="40"
+                TextColor="WHITE"
+                BackgroundColor="Black"
+                LineBreakMode="WordWrap"
+                HeightRequest="150"
+                WidthRequest="400"
+                HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Margin="5"
+                Grid.Row="1"
+                Grid.Column="0"
+                x:Name="tut"
+                Text="Voir les rencontres futures"
+                Style="{StaticResource SubHeadline}"
+                Clicked="BoutonAfficherRencontres"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
+
+<!-- Source qui nous a aid� � naviguer entre les pages. -->
+<!-- Source : https://learn.microsoft.com/fr-fr/dotnet/maui/user-interface/pages/navigationpage?view=net-maui-8.0 -->
+<!-- Source2 : https://www.youtube.com/watch?v=G1ZQqzaILyY -->

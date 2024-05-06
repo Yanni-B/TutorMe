@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="TutorMe.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:TutorMe"
+    Shell.FlyoutBehavior="Flyout"
+    Title="TutorMe">
+
+
+
+    <FlyoutItem Title="Menu">
+        <!-- Define a flyout item for AvoirTuteur page -->
+        <ShellContent Title="Avoir Tuteur" ContentTemplate="{DataTemplate local:AvoirTuteur}" Route="PageAccueil"/>
+    </FlyoutItem>
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="LoginPage" />
+
+
+
+</Shell>

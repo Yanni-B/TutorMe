@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutorMe.SignUpPage"
+             Title="SignUpPage"
+             BackgroundImageSource="N:\telechargement\TutorMe-master\TutorMe-master\TutorMe\Resources\Images\background.jpg">
+
+    <VerticalStackLayout Spacing="25" Padding="10,0" VerticalOptions ="Center">
+        <StackLayout Padding="20">
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="WELCOME" FontSize="50" TextColor="White" HorizontalTextAlignment="Center" FontFamily="KG"/>
+                <Label Text="Create an account" FontSize="18" TextColor="Gray" HorizontalTextAlignment="Center" FontFamily="KG" />
+            </VerticalStackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="user" VerticalOptions="Center" Placeholder="Username" Keyboard="Email" HorizontalOptions="FillAndExpand" HeightRequest="50" WidthRequest="300"  FontFamily="KG" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="pass" VerticalOptions="Center" Placeholder="Password" IsPassword="True" Keyboard="Email" HorizontalOptions="FillAndExpand" HeightRequest="50" WidthRequest="300" FontFamily="KG"/>
+            </StackLayout>
+
+
+            <Label Text="Are you a tutor?"  FontSize="16" TextColor="White" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="0,20,0,0" FontFamily="KG"/>
+
+            <StackLayout Orientation="Horizontal" Padding="20" VerticalOptions ="Center">
+                <RadioButton x:Name="YesRadioButton" GroupName="TutorGroup"/>
+                <Label Text="Yes" VerticalOptions="Center" FontFamily="KG" />
+                <RadioButton x:Name="NoRadioButton" GroupName="TutorGroup"  />
+                <Label Text="No" VerticalOptions="Center"  FontFamily="KG" />
+            </StackLayout>
+
+            <Button Text="Sign Up" Clicked="OnSignUpButtonClicked"  HeightRequest="10" WidthRequest="300" BackgroundColor="Black" CornerRadius="20" FontFamily="KG"  />
+        </StackLayout>
+
+
+
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="TutorMe.DevenirTuteur"
+             >
+
+    <ContentPage.Background>
+        <LinearGradientBrush>
+            <GradientStop Offset="0.1" Color="#274472"/>
+
+            <GradientStop Offset="1.0" Color="#41729F"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+
+    <ScrollView>
+
+        <Border StrokeShape="RoundRectangle 40,40,40,40" WidthRequest="530" HeightRequest="850">
+            <VerticalStackLayout
+          Spacing="25" Padding="30,0" VerticalOptions ="Center"  WidthRequest="500" >
+
+
+
+                <Label Text="DEVENIR UN TUTEUR" FontSize="50" TextColor="White" HorizontalTextAlignment="Center"  FontFamily="KG" />
+                <Entry x:Name="newPerson"
+                Placeholder="Entrez votre nom et prénom" FontFamily="KG" FontSize="30" HeightRequest="50" WidthRequest="400" />
+
+                <Entry x:Name="Note"
+                Placeholder="Veuillez indiquer votre relevé de note" FontFamily="KG" FontSize="30"  HeightRequest="50" WidthRequest="400"/>
+
+                <Label Text="Première disponibilité" HorizontalTextAlignment="Center"  FontFamily="KG" FontSize="30" />
+
+                <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Center">
+                    <!-- Jour -->
+
+
+                    <Picker x:Name="pickerJour1" Title="Choisissez le jour" VerticalOptions="Center" FontFamily="KG" FontSize="20">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Lundi</x:String>
+                                <x:String>Mardi</x:String>
+                                <x:String>Mercredi</x:String>
+                                <x:String>Jeudi</x:String>
+                                <x:String>Vendredi</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+
+                    <Label  VerticalOptions="Center" />
+                    <Picker x:Name="pickerHeureDebut1" Title="Choisissez l'heure" VerticalOptions="Center" FontFamily="KG" FontSize="20">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:Int32}">
+                                <x:Int32>8</x:Int32>
+                                <x:Int32>9</x:Int32>
+                                <x:Int32>10</x:Int32>
+                                <x:Int32>11</x:Int32>
+                                <x:Int32>12</x:Int32>
+                                <x:Int32>13</x:Int32>
+                                <x:Int32>14</x:Int32>
+                                <x:Int32>15</x:Int32>
+                                <x:Int32>16</x:Int32>
+                                <x:Int32>17</x:Int32>
+                                <x:Int32>18</x:Int32>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                    <Label  VerticalOptions="Center" />
+                    <Picker x:Name="pickerHeureFin1" Title="Choisissez l'heure" VerticalOptions="Center" FontFamily="KG" FontSize="20">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:Int32}">
+                                <x:Int32>8</x:Int32>
+                                <x:Int32>9</x:Int32>
+                                <x:Int32>10</x:Int32>
+                                <x:Int32>11</x:Int32>
+                                <x:Int32>12</x:Int32>
+                                <x:Int32>13</x:Int32>
+                                <x:Int32>14</x:Int32>
+                                <x:Int32>15</x:Int32>
+                                <x:Int32>16</x:Int32>
+                                <x:Int32>17</x:Int32>
+                                <x:Int32>18</x:Int32>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+
+                </StackLayout>
+
+
+                <Label Text="Deuxième disponibilité" HorizontalTextAlignment="Center"   FontFamily="KG" FontSize="30" />
+
+                <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Center">
+                    <!-- Jour -->
+                    <Label   VerticalOptions="Center" />
+                    <Picker x:Name="pickerJour2" Title="Choisissez le jour" VerticalOptions="Center" FontFamily="KG" FontSize="20">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Lundi</x:String>
+                                <x:String>Mardi</x:String>
+                                <x:String>Mercredi</x:String>
+                                <x:String>Jeudi</x:String>
+                                <x:String>Vendredi</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+
+                    <Label  VerticalOptions="Center" />
+                    <Picker x:Name="pickerHeureDebut2" Title="Choisissez l'heure" VerticalOptions="Center" FontFamily="KG" FontSize="20" >
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:Int32}">
+                                <x:Int32>8</x:Int32>
+                                <x:Int32>9</x:Int32>
+                                <x:Int32>10</x:Int32>
+                                <x:Int32>11</x:Int32>
+                                <x:Int32>12</x:Int32>
+                                <x:Int32>13</x:Int32>
+                                <x:Int32>14</x:Int32>
+                                <x:Int32>15</x:Int32>
+                                <x:Int32>16</x:Int32>
+                                <x:Int32>17</x:Int32>
+                                <x:Int32>18</x:Int32>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                    <Label VerticalOptions="Center" />
+                    <Picker x:Name="pickerHeureFin2" Title="Choisissez l'heure" VerticalOptions="Center" FontFamily="KG" FontSize="20">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:Int32}">
+                                <x:Int32>8</x:Int32>
+                                <x:Int32>9</x:Int32>
+                                <x:Int32>10</x:Int32>
+                                <x:Int32>11</x:Int32>
+                                <x:Int32>12</x:Int32>
+                                <x:Int32>13</x:Int32>
+                                <x:Int32>14</x:Int32>
+                                <x:Int32>15</x:Int32>
+                                <x:Int32>16</x:Int32>
+                                <x:Int32>17</x:Int32>
+                                <x:Int32>18</x:Int32>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+
+                </StackLayout>
+
+                <Label Text="Troisième disponibilité"  HorizontalTextAlignment="Center"   FontFamily="KG" FontSize="30"/>
+                <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Center">
+                    <!-- Jour -->
+                    <Label  VerticalOptions="Center" />
+                    <Picker x:Name="pickerJour3" Title="Choisissez le jour" VerticalOptions="Center" FontFamily="KG" FontSize="20">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Lundi</x:String>
+                                <x:String>Mardi</x:String>
+                                <x:String>Mercredi</x:String>
+                                <x:String>Jeudi</x:String>
+                                <x:String>Vendredi</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+
+                    <Label  VerticalOptions="Center" />
+                    <Picker x:Name="pickerHeureDebut3" Title="Choisissez l'heure" VerticalOptions="Center" FontFamily="KG" FontSize="20">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:Int32}">
+                                <x:Int32>8</x:Int32>
+                                <x:Int32>9</x:Int32>
+                                <x:Int32>10</x:Int32>
+                                <x:Int32>11</x:Int32>
+                                <x:Int32>12</x:Int32>
+                                <x:Int32>13</x:Int32>
+                                <x:Int32>14</x:Int32>
+                                <x:Int32>15</x:Int32>
+                                <x:Int32>16</x:Int32>
+                                <x:Int32>17</x:Int32>
+                                <x:Int32>18</x:Int32>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                    <Label VerticalOptions="Center" />
+                    <Picker x:Name="pickerHeureFin3" Title="Choisissez l'heure" VerticalOptions="Center" FontFamily="KG" FontSize="20">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:Int32}">
+                                <x:Int32>8</x:Int32>
+                                <x:Int32>9</x:Int32>
+                                <x:Int32>10</x:Int32>
+                                <x:Int32>11</x:Int32>
+                                <x:Int32>12</x:Int32>
+                                <x:Int32>13</x:Int32>
+                                <x:Int32>14</x:Int32>
+                                <x:Int32>15</x:Int32>
+                                <x:Int32>16</x:Int32>
+                                <x:Int32>17</x:Int32>
+                                <x:Int32>18</x:Int32>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+
+                </StackLayout>
+
+
+
+
+
+
+                <!--<Entry x:Name="Horaire1"
+                Placeholder="Premier horaire" />
+
+			<Entry x:Name="Horaire2"
+                Placeholder="Deuxième horaire" />
+
+            <Entry x:Name="Horaire3"
+                Placeholder="Troisième horaire" />-->
+
+                <Button Text="Envoyer votre candidature"
+                Grid.Row="1"
+                Clicked="saveButton_Clicked"  HeightRequest="50" WidthRequest="300" BackgroundColor="Black" />
+
+                <Label x:Name="statusMessage"
+                TextColor="{StaticResource Primary}"
+                Grid.Row="2" />
+
+
+
+                <CollectionView x:Name="peopleList" Grid.Row="4">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid ColumnDefinitions="*,2*">
+                                <Label Text="{Binding Id}" TextColor="{StaticResource Primary}"/>
+                                <Label Grid.Column="1" Text="{Binding Name}" TextColor="{StaticResource Primary}" />
+                                <Label Grid.Column="1" Text="{Binding Prenom}" TextColor="{StaticResource Primary}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </VerticalStackLayout>
+        </Border>
+    </ScrollView>
+
+</ContentPage>

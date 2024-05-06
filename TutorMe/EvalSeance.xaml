@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TutorMe.EvalSeance">
+
+
+    <ContentPage.Background>
+        <LinearGradientBrush>
+            <GradientStop Offset="0.1" Color="#274472"/>
+
+            <GradientStop Offset="1.0" Color="#41729F"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    
+    <ScrollView>
+        <Border StrokeShape="RoundRectangle 40,40,40,40" WidthRequest="530" HeightRequest="1000">
+        <VerticalStackLayout
+             Padding="70"
+               Spacing="25">
+            <Label
+                Text="ÉVALUATION APRÈS LA SESSION"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" TextColor="black" />
+
+			<Entry x:Name="nomTuteur"
+                Placeholder="Nom du tuteur" FontSize="30" HeightRequest="50" WidthRequest="400" />
+
+			<Entry x:Name="nomEleve"
+                Placeholder="Nom de l'élève" PlaceholderColor="Black"  FontSize="30" HeightRequest="50" WidthRequest="400" />
+
+			<Entry x:Name="date"
+                Placeholder="Indiquez la date" PlaceholderColor="Black"  FontSize="30" HeightRequest="50" WidthRequest="400"/>
+
+			<Entry x:Name="cours"
+                Placeholder="Cours : " PlaceholderColor="Black"  FontSize="30" HeightRequest="50" WidthRequest="400"/>
+
+			<Entry x:Name="session"
+                Placeholder="Session : " PlaceholderColor="Black"  FontSize="30" HeightRequest="50" WidthRequest="400"/>
+
+			<Entry x:Name="noteSeance"
+                Placeholder="Note sur 5" PlaceholderColor="Black"  FontSize="30" HeightRequest="50" WidthRequest="400"/>
+
+			<Entry x:Name="commentaireTuteur"
+                Placeholder="Commentaire : " PlaceholderColor="Black"  FontSize="30" HeightRequest="50" WidthRequest="400"/>
+			
+			
+			<Button Text="Envoyer l'évaluation"
+				Grid.Row="1"
+				Clicked="saveButton_Clicked"   HeightRequest="50" WidthRequest="300" BackgroundColor="Black" />
+
+
+		</VerticalStackLayout>
+        </Border>
+    </ScrollView>
+
+</ContentPage>
+
+
+<!-- Source qui nous a aid� � naviguer entre les pages. -->
+<!-- Source : https://learn.microsoft.com/fr-fr/dotnet/maui/user-interface/pages/navigationpage?view=net-maui-8.0 -->
+<!-- Source2 : https://www.youtube.com/watch?v=G1ZQqzaILyY -->
+
