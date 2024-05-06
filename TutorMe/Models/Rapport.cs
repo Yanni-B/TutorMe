@@ -25,7 +25,7 @@ public class Rapport
     public string Session { get; set; } = "";
 
     [MaxLength(250), Unique]
-    public string Cours { get; set; } = "";
+    public int Cours { get; set; }
 
     [MaxLength(250), Unique]
     public string Commentaire { get; set; } = "";

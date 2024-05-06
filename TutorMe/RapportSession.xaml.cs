@@ -25,7 +25,6 @@ namespace TutorMe
                     NoteAvant = NoteAvantSession.Text,
                     NoteApres = NoteApresSession.Text,
                     Session = Session.Text,
-                    Cours = Cours.Text,
                     Commentaire = commentaireTuteur.Text
                 });
                 await DisplayAlert("Succès", "Évaluation bien envoyée.", "OK");

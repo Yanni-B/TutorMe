@@ -122,6 +122,7 @@ public partial class AdminPage : ContentPage
                         jour = jourMatch,
                         heureDebut =  heureDebutMatch,
                         heureFin = heureFinMatch,
+                        cours = etudiant.choixCours
                         
                     }) ;
 

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TutorMe.SignUpPage"
              Title="SignUpPage"
-             BackgroundImageSource="N:\telechargement\TutorMe-master\TutorMe-master\TutorMe\Resources\Images\background.jpg">
+             BackgroundImageSource="C:\Users\2285751\Source\Repos\TutorMe2\TutorMe\Resources\Images\background.jpg">
 
     <VerticalStackLayout Spacing="25" Padding="10,0" VerticalOptions ="Center">
         <StackLayout Padding="20">
@@ -25,7 +25,7 @@
 
             <Label Text="Are you a tutor?"  FontSize="16" TextColor="White" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="0,20,0,0" FontFamily="KG"/>
 
-            <StackLayout Orientation="Horizontal" Padding="20" VerticalOptions ="Center">
+            <StackLayout Orientation="Horizontal" Padding="20" VerticalOptions ="Center" HorizontalOptions="Center">
                 <RadioButton x:Name="YesRadioButton" GroupName="TutorGroup"/>
                 <Label Text="Yes" VerticalOptions="Center" FontFamily="KG" />
                 <RadioButton x:Name="NoRadioButton" GroupName="TutorGroup"  />

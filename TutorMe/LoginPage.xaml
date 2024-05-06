@@ -5,7 +5,7 @@
              x:Class="TutorMe.LoginPage"
              Title="LoginPage"
              
-             BackgroundImageSource="N:\telechargement\TutorMe-master\TutorMe-master\TutorMe\Resources\Images\background.jpg">
+             BackgroundImageSource="./Resources/Images/background.jpg">
 
 
 
