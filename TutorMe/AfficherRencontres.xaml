@@ -5,30 +5,31 @@
              Title="AfficherRencontres">
     <ScrollView>
         <VerticalStackLayout>
-        <Label 
+            <Label 
             Text="Rencontres futures"
             VerticalOptions="Start" 
             HorizontalOptions="Center" />
-        </VerticalStackLayout>
-        <Grid>
             <Grid>
-                <Button Clicked="showRencontres" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Start"></Button>
-                <!--<Label
-                    Text="Date"
-                    HorizontalOptions="Start"
-                    ></Label>
-                <Label
-                    Text="Heure"
-                    HorizontalOptions="Center"
-                    ></Label>
-                <Label
-                    Text="Nom de l'autre"
-                    HorizontalOptions="End"
-                    ></Label>-->
-                <Label x:Name="showMatchings" VerticalOptions="Center" Text="Blabla"></Label>
+                <Grid>
+                    <Button Clicked="showRencontres" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Start"></Button>
+                    <!--<Label
+            Text="Date"
+            HorizontalOptions="Start"
+            ></Label>
+        <Label
+            Text="Heure"
+            HorizontalOptions="Center"
+            ></Label>
+        <Label
+            Text="Nom de l'autre"
+            HorizontalOptions="End"
+            ></Label>-->
+                    <Label x:Name="showMatchings" VerticalOptions="Center" Text="Blabla"></Label>
 
+                </Grid>
             </Grid>
-        </Grid>
+        </VerticalStackLayout>
+        
     </ScrollView>
-    
+
 </ContentPage>

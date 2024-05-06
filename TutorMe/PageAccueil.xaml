@@ -68,6 +68,7 @@
                 HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="5"
                 Grid.Row="0"
                 Grid.Column="1"
+                x:Name="tut"
                 Text="Devenir un tuteur."
                 Clicked="BoutonDevenirTuteur"
                 Style="{StaticResource SubHeadline}"/>
@@ -125,7 +126,6 @@
                 HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Margin="5"
                 Grid.Row="1"
                 Grid.Column="0"
-                x:Name="tut"
                 Text="Voir les rencontres futures"
                 Style="{StaticResource SubHeadline}"
                 Clicked="BoutonAfficherRencontres"/>

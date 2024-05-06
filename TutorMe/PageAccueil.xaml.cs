@@ -7,7 +7,7 @@ namespace TutorMe
 
     {
 
-        
+        Utilisateur user2;
 
         public PageAccueil(Utilisateur user)
         {
@@ -34,13 +34,12 @@ namespace TutorMe
                 tut.IsVisible = false;
                 tut2.IsVisible = false;
             }
-
-
             void BoutonAfficherRencontres(object sender, EventArgs e)
             {
                 var database = new Database();
                 Navigation.PushAsync(new AfficherRencontres(user, database));
             }
+
         }
         private void BoutonChangerTuteur(object sender, EventArgs e)
         {
@@ -75,6 +74,8 @@ namespace TutorMe
         }
 
         
+
+
 
         private async void SignOut_Clicked(object sender, EventArgs e)
         {
