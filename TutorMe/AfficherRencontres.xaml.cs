@@ -10,11 +10,18 @@ namespace TutorMe
         public AfficherRencontres(Utilisateur user, Database database)
         {
             InitializeComponent();
-            user2 = user;
-            async void showRencontres(object sender, EventArgs e)
+            callShow(user);
+             
+        }
+
+        public void callShow(Utilisateur user)
+        {
+            showRencontres(user);
+        }
+        async void showRencontres(Utilisateur user)
             {
-                // Récupérer les étudiants et les tuteurs depuis la base de données
-                MatchingInfo match = await database.GetByIdMatch(user.Id);
+            // Récupérer les étudiants et les tuteurs depuis la base de données
+            MatchingInfo match = await database.GetByIdMatch(user.Id);
                 try
                 {
                     showMatchings.Text = "Date = " + match.jour + " HeureDebut = " + match.heureDebut;
@@ -26,9 +33,6 @@ namespace TutorMe
                     Navigation.RemovePage(this);
                 }
             }
-
-        }
-        
 
 
 

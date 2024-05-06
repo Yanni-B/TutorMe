@@ -55,7 +55,7 @@
                 HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="5"
                 Grid.Row="0"
                 Grid.Column="0"
-                Text="Avoir un tuteur."
+                Text="Avoir un tuteur"
                 Clicked="BoutonChangerTuteur"
                 Style="{StaticResource SubHeadline}"/>
 
