@@ -16,11 +16,11 @@
  
 
 
-#Pré requis
+##Pré requis
 Installez Visual Studio 2022.
 Installez le package SQL-Lite.(Studio peut les faire pour vous)
 
-#Attention
+##Attention
 
 Soyez sur que vos packages soit toujours à jour! 
 
