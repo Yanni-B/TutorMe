@@ -14,7 +14,15 @@
  
  &nbsp; 🧍 [@Nassimelhaji](https://www.github.com/Nassimelhaji)
  
- 
+
+
+#Pré requis
+Installez Visual Studio 2022.
+Installez le package SQL-Lite.(Studio peut les faire pour vous)
+
+#Attention
+
+Soyez sur que vos packages soit toujours à jour! 
 
 ## Procédure
   - Cliquez sur Code, puis copiez l'adresse https://github.com/Yanni-B/TutorMe.git.
