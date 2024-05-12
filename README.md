@@ -1,4 +1,7 @@
 # TutorMe
+est une application bureau qui met en relation 
+les tuteurs et les etudiants pour recevoir de l'aide personelle
+sur n'importe quel matière 
 
  &nbsp; Branch : dev
 
