@@ -22,11 +22,11 @@ de l'aide personelle sur une matière !
 Installez Visual Studio 2022.
 Installez le package SQL-Lite.(Studio peut les faire pour vous)
 
-## Attention
+            ## Attention
 
 Soyez sur que vos packages sont toujours à jour! 
 
-    ## Procédure 
+## Procédure 
   - Cliquez sur Code, puis copiez l'adresse https://github.com/Yanni-B/TutorMe.git.
   - Ouvrez l'application Microsoft Visual Studio.
   - Dans la barre de menus, cliquez sur "Git" puis sur "Cloner un dépôt...".
