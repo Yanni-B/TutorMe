@@ -35,3 +35,8 @@ Soyez sur que vos packages sont toujours à jour!
   - Pour changer de branche à la branche "dev", cliquez sur la branche actuelle "main" dans le coin inférieur droit de l'écran, puis sélectionnez la branche "partieVisuel" dans la liste des branches distantes.
   - Ouvrez le fichier .sln pour ouvrir le projet dans Visual Studio.
   - Vous pouvez maintenant utiliser les différents services offerts par l'application.
+
+## Comment est séparé le code ? 
+- Chaque table a un fichier
+- Chaque page a un fichier xaml et un fichier cs
+- Il existe une page pour la base de donnée (les méthodes CRUD) 
