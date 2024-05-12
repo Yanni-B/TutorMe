@@ -1,6 +1,8 @@
 # TutorMe
 
- &nbsp; Branch : partieVisuel
+ &nbsp;
+est une application bureau qui met en relation les tuteurs et les etudiants pour recevoir 
+de l'aide personelle sur une matière !
 
 
 ## Auteurs
